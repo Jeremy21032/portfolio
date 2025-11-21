@@ -1,119 +1,66 @@
-# 🚀 Portafolio de Jeremy León
+# 👋 Portafolio de Jeremy León
 
-Portafolio personal desarrollado con [Astro](https://astro.build), [Tailwind CSS](https://tailwindcss.com) y TypeScript.
+Bienvenido a mi portafolio profesional. Soy **Jeremy León**, un desarrollador FullStack con más de 5 años de experiencia especializado en crear soluciones digitales innovadoras y escalables.
 
-## ✨ Características
+## 🎯 Sobre Mí
 
-- ⚡ Astro para máximo rendimiento
-- 🎨 Tailwind CSS para estilos
-- 🌙 Modo oscuro/claro
-- 📱 Totalmente responsive
-- 🚀 Optimizado para Vercel
-- ⚙️ TypeScript para type safety
+Desarrollador de software apasionado por la tecnología y la innovación. Me especializo en el desarrollo de aplicaciones web y móviles, con experiencia sólida en:
 
-## 🛠️ Tecnologías
+- **Frontend**: React, React Native, TypeScript, Astro, Shopify, Liquid
+- **Backend**: Node.js, GraphQL, Prisma, microservicios
+- **Cloud & DevOps**: AWS (Lambda, ECS, EC2), GitHub Actions, CI/CD
+- **E-commerce**: Desarrollo y personalización de tiendas Shopify
+- **Bancario**: Desarrollo de aplicaciones financieras y sistemas bancarios
 
-- **Astro** - Framework web moderno
-- **Tailwind CSS** - Framework de CSS utility-first
-- **TypeScript** - Tipado estático
-- **Vercel** - Hosting y despliegue
+## 💼 Experiencia
 
-## 📦 Instalación
+Actualmente trabajo como **FullStack Developer** en **IXComercio**, donde desarrollo aplicaciones privadas para Shopify, diseño microservicios y construyo dashboards operativos. Anteriormente trabajé en **Clearminds Consultores** desarrollando aplicaciones móviles bancarias y sistemas financieros.
 
-```bash
-# Instalar dependencias
-npm install
+## 🚀 Proyectos Destacados
 
-# Iniciar servidor de desarrollo
-npm run dev
+- **Apps Privadas para Shopify** - Desarrollo de aplicaciones personalizadas con Remix, Node.js y GraphQL
+- **Aplicación Móvil Banco Santander** - App bancaria desarrollada con React Native y TypeScript
+- **MoneyBlinks** - Aplicación financiera móvil con integración COBIS TOPAZ
+- **Kenneth Cole Perú** - Implementación y modificación de tienda online con sistemas de management logístico
+- **Sistema Bancario COBIS TOPAZ** - Desarrollo de software bancario con AWS
 
-# Construir para producción
-npm run build
+## 📧 Contacto
 
-# Preview de producción
-npm run preview
-```
+- 📧 Email: [jeremy.leon.g@outlook.com](mailto:jeremy.leon.g@outlook.com)
+- 💼 LinkedIn: [linkedin.com/in/jeremy-leon-g/](https://www.linkedin.com/in/jeremy-leon-g/)
+- 💻 GitHub: [github.com/Jeremy21032](https://github.com/Jeremy21032)
 
-## 🎯 Personalización
+## 🛠️ Tecnologías que Utilizo
 
-### Información Principal
+### Frontend
 
-1. **Hero** (`src/components/Hero.astro`)
-   - Nombre: ✅ Ya actualizado a "Jeremy León"
-   - Descripción: Actualiza con tu información profesional
-   - Redes sociales: Actualiza GitHub, LinkedIn y email
+- React & React Native
+- TypeScript & JavaScript
+- Astro
+- Shopify & Liquid
+- HTML5 & CSS3
+- Tailwind CSS
 
-2. **Sobre Mí** (`src/components/AboutMe.astro`)
-   - Biografía: Escribe sobre ti, tu experiencia y proyectos destacados
+### Backend
 
-3. **Experiencia** (`src/components/Experience.astro`)
-   - Agrega tus trabajos del CV en el array `EXPERIENCE`
+- Node.js
+- GraphQL
+- Prisma
+- Microservicios
 
-4. **Proyectos** (`src/components/Projects.astro`)
-   - Agrega tus proyectos en el array `PROJECTS`
+### Cloud & DevOps
 
-### Imágenes
+- Amazon Web Services (AWS)
+- GitHub Actions
+- Docker
+- CI/CD
 
-Agrega estas imágenes en `public/`:
-- `fotoperfil.webp` - Tu foto de perfil
-- `projects/*.webp` - Imágenes de tus proyectos
+### Bases de Datos
 
-### Configuración
-
-- `astro.config.mjs` - Actualiza la URL del sitio cuando despliegues
-
-## 📄 CV
-
-Tu CV está en `portfolio/static/Jeremy_León_CV(E).pdf`. Puedes:
-- Copiarlo a `porfoliov1/public/` si quieres enlazarlo
-- O crear un enlace directo en el Hero o Footer
-
-## 🚀 Despliegue en Vercel
-
-### Opción 1: Desde GitHub
-
-1. Sube tu código a GitHub
-2. Ve a [vercel.com](https://vercel.com)
-3. Importa tu repositorio
-4. Vercel detectará automáticamente Astro
-5. Haz clic en "Deploy"
-
-### Opción 2: Desde CLI
-
-```bash
-npm i -g vercel
-vercel
-```
-
-## 📝 Estructura del Proyecto
-
-```
-porfoliov1/
-├── public/          # Archivos estáticos (imágenes, favicon)
-├── src/
-│   ├── components/  # Componentes Astro
-│   │   ├── Hero.astro
-│   │   ├── AboutMe.astro
-│   │   ├── Experience.astro
-│   │   ├── Projects.astro
-│   │   └── ...
-│   ├── layouts/     # Layouts
-│   └── pages/       # Páginas
-├── astro.config.mjs # Configuración de Astro
-└── package.json
-```
-
-## 📚 Documentación
-
-- [Astro Docs](https://docs.astro.build)
-- [Tailwind CSS Docs](https://tailwindcss.com/docs)
-- [Vercel Docs](https://vercel.com/docs)
-
-## 📞 Soporte
-
-Para más detalles sobre cómo personalizar, revisa `INSTRUCCIONES_PERSONALIZACION.md`
+- PostgreSQL
+- MongoDB
+- Redis
 
 ---
 
-**¡Listo para personalizar y desplegar!** 🎉
-
+**Desarrollado con Astro, Tailwind CSS y TypeScript** ⚡

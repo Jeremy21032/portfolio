@@ -1,6 +1,7 @@
 ---
 import GitHub from "./icons/GitHub.astro";
 import NextJS from "./icons/NextJS.astro";
+import ReactIcon from "./icons/React.astro";
 import Tailwind from "./icons/Tailwind.astro";
 import Javascript from "./icons/Javascript.astro";
 import Link from "./icons/Link.astro";
@@ -9,6 +10,7 @@ import Html from "./icons/Html.astro";
 import Css from "./icons/Css.astro";
 import Flutter from "./icons/Flutter.astro";
 import Work from "./icons/Work.astro";
+import ShopifyIcon from "./icons/Shopify.astro";
 
 const TAGS = {
   NEXT: {
@@ -47,25 +49,66 @@ const TAGS = {
     icon: Flutter,
     hoverColor: "hover:bg-[#008a9d]",
   },
+  REACT: {
+    name: "React",
+    class: "bg-[#61dafb] text-black",
+    icon: ReactIcon,
+    hoverColor: "hover:bg-[#4fa8c5]",
+  },
+  SHOPIFY: {
+    name: "Shopify",
+    class: "bg-[#95BF47] text-white",
+    icon: ShopifyIcon,
+    hoverColor: "hover:bg-[#7a9d38]",
+  },
 };
 
+// Proyectos basados en el CV de Jeremy León
 const PROJECTS = [
   {
-    title: "Clima App",
-    description: "App simple para ver el clima actual ",
-    link: "https://clima-app-v2-two.vercel.app/",
-    github: "https://github.com/gbascur/clima-app-v2",
-    image: "/projects/climaappv2.webp",
-    tags: [TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
+    title: "Apps Privadas para Shopify",
+    description: "Desarrollo de aplicaciones privadas para Shopify utilizando Remix, Node.js, GraphQL y Prisma. Implementé Carrier Services para cálculo de tarifas, construcción de temas personalizados con Liquid, y diseño de microservicios para gestión de órdenes, logística y pagos. Incluye dashboards operativos desarrollados con Astro para monitoreo y métricas.",
+    link: null,
+    github: null,
+    work: null,
+    image: "/IXCOMERCIO.jpg",
+    tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.TAILWIND],
   },
   {
-    title: "Piggetz-App",
-    description:
-      "Aplicación movil para administrar gastos personales, con autenticación y sincronización en tiempo real.",
-    // link: "https://adventjs.dev",
-    work: "https://pleasewait.co.uk/",
-    image: "/projects/piggetz.webp",
-    tags: [TAGS.FLUTTER],
+    title: "Aplicación Móvil Banco Santander",
+    description: "Desarrollo de aplicación móvil bancaria para Banco Santander utilizando servicios de COBIS TOPAZ. Implementada con React Native y TypeScript, incluyendo consumo de servicios corporativos, pruebas unitarias con Jest y JMeter, y despliegue en AWS con funciones Lambda y GraphQL.",
+    link: null,
+    github: null,
+    work: null,
+    image: "/tuiio.png",
+    tags: [TAGS.REACT, TAGS.JAVASCRIPT],
+  },
+  {
+    title: "MoneyBlinks",
+    description: "Aplicación móvil financiera desarrollada en React Native con TypeScript. Integración con servicios de COBIS TOPAZ para operaciones bancarias, consumo de servicios corporativos y pruebas unitarias exhaustivas. Proyecto enfocado en la experiencia del usuario y seguridad de transacciones.",
+    link: null,
+    github: null,
+    work: null,
+    image: "/moneyblinks.png",
+    tags: [TAGS.REACT, TAGS.JAVASCRIPT],
+  },
+  {
+    title: "Sistema Bancario COBIS TOPAZ",
+    description: "Desarrollo de software para producto bancario COBIS TOPAZ. Levantamiento de requerimientos y flujos transaccionales para clientes bancarios (FIE, FINCA, BANISTMO). Implementación en AWS con funciones Lambda, GraphQL, CloudWatch, ECS y EC2. Pruebas unitarias con Gherkin.",
+    link: null,
+    github: null,
+    work: null,
+    image: "/cobis.png",
+    tags: [TAGS.JAVASCRIPT],
+  },
+  {
+    title: "Kenneth Cole Perú",
+    description: "Implementación y modificación de la tienda online de Kenneth Cole Perú. Realicé la modificación del landing de la tienda mejorando la experiencia del usuario y la conversión. Implementé sistemas de management en temas logísticos para optimizar la gestión de inventario, órdenes y envíos, mejorando significativamente la eficiencia operativa de la tienda.",
+    link: null,
+    github: null,
+    work: "https://pe.kennethcolelatino.com/", // TODO: Actualizar con la URL real de la tienda
+    image: "/KC.png",
+    tags: [TAGS.SHOPIFY, TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
   },
 ];
 ---
@@ -77,7 +120,7 @@ const PROJECTS = [
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
-              alt="Recién llegado vs 5 años en Nueva Zelanda"
+              alt={title}
               class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
               loading="lazy"
               src={image}

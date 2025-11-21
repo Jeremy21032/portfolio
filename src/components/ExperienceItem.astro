@@ -28,7 +28,7 @@ const { title, company, description, link, date, technologies } = Astro.props
     </div>
   </div>
   <div class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
-    {description}
+    <div set:html={description}></div>
     {technologies && technologies.length > 0 && (
       <div class="flex gap-4 mt-2">
         {technologies.map((tech) => (
@@ -37,7 +37,10 @@ const { title, company, description, link, date, technologies } = Astro.props
               <img src="/vue.svg" alt="Vue" class="w-8 h-8 animate-bounce saturate-[0.8]" />
             )}
             {tech === "node" && (
-              <img src="/node.svg" alt="Node.js" class="w-8 h-8 animate-bounce saturate-[0.8]" />
+              <img src="/icons/nodejs.svg" alt="Node.js" class="w-8 h-8 animate-bounce saturate-[0.8]" />
+            )}
+            {tech === "nodejs" && (
+              <img src="/icons/nodejs.svg" alt="Node.js" class="w-8 h-8 animate-bounce saturate-[0.8]" />
             )}
             {tech === "azure" && (
               <img src="/icons/azure.svg" alt="Azure" class="w-8 h-8 animate-bounce saturate-[0.8]" />
@@ -89,6 +92,30 @@ const { title, company, description, link, date, technologies } = Astro.props
             )}
             {tech === "gitlab" && (
               <img src="/icons/gitlab.svg" alt="Gitlab" class="w-8 h-8 animate-bounce saturate-[0.8]" />
+            )}
+            {tech === "remix" && (
+              <img src="/icons/remix.svg" alt="Remix" class="w-8 h-8 animate-bounce saturate-[0.8]" />
+            )}
+            {tech === "graphql" && (
+              <img src="/icons/graphql.svg" alt="GraphQL" class="w-8 h-8 animate-bounce saturate-[0.8]" />
+            )}
+            {tech === "prisma" && (
+              <img src="/icons/prisma.svg" alt="Prisma" class="w-8 h-8 animate-bounce saturate-[0.8]" />
+            )}
+            {tech === "astro" && (
+              <img src="/icons/astro.svg" alt="Astro" class="w-8 h-8 animate-bounce saturate-[0.8]" />
+            )}
+            {tech === "shopify" && (
+              <img src="/icons/shopify.svg" alt="Shopify" class="w-8 h-8 animate-bounce saturate-[0.8]" />
+            )}
+            {tech === "liquid" && (
+              <img src="/icons/liquid.png" alt="Liquid" class="w-8 h-8 animate-bounce saturate-[0.8]" />
+            )}
+            {tech === "github-actions" && (
+              <img src="/icons/github-actions.svg" alt="GitHub Actions" class="w-8 h-8 animate-bounce saturate-[0.8]" />
+            )}
+            {tech === "figma" && (
+              <img src="/icons/figma.svg" alt="Figma" class="w-8 h-8 animate-bounce saturate-[0.8]" />
             )}
           </div>
         ))}

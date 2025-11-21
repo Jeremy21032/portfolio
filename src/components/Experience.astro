@@ -1,54 +1,88 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro";
+
 const EXPERIENCE = [
   {
-    date: "Agosto 2022 - Actualmente...",
-    title: "Desarollador Full Stack",
-    company: "IX Comercio",
-    description:
-      "Especialista en desarrollo de microservicios y soluciones cloud-native con más de 3 años de experiencia en el sector retail y e-commerce. A cargo del diseño, desarrollo y mantenimiento de sistemas críticos de precios, disponibilidad y gestión de productos, implementando arquitecturas escalables en plataformas cloud como Google Cloud Platform y Microsoft Azure. Mi experiencia abarca desde la optimización de bases de datos y procedimientos almacenados hasta la implementación de soluciones de alta disponibilidad capaces de procesar miles de transacciones diariamente. Especializado en tecnologías como TypeScript, JavaScript, Java, Golang y PostgreSQL, con un enfoque en la mejora continua del rendimiento operativo y la escalabilidad de sistemas en entornos empresariales dinámicos.",
+    date: "Mayo 2024 - Actual",
+    title: "FullStack Developer",
+    company: "IXComercio",
+    description: `
+      <p>Desarrollo de aplicaciones privadas para Shopify utilizando Remix, Node.js, GraphQL y Prisma. Implementación de Carrier Services para cálculo de tarifas y sincronización de datos.</p>
+      <p>Construcción y personalización de temas Shopify usando Liquid, JSON templates y secciones dinámicas. Creación de snippets, componentes reutilizables, metafields y bloques para adaptar tiendas a operaciones logísticas.</p>
+      <p>Diseño de microservicios para gestión de órdenes, logística, pagos y trazabilidad. Automatización CI/CD con GitHub Actions y construcción de dashboards operativos con Astro para logística, pagos y métricas.</p>
+      <p>Integraciones omnicanal con WL180, WL360 y MKP para extracción y trazabilidad de órdenes. Implementación de scripts de healthcheck, monitoreo y generación de reportes automáticos en Excel/CSV.</p>
+    `,
     technologies: [
-      "azure",
-      "postgresql",
       "javascript",
-      "mongodb",
       "typescript",
       "react",
-      "redis",
-      "gitlab",
+      "nodejs",
+      "remix",
+      "graphql",
+      "prisma",
+      "shopify",
+      "liquid",
+      "astro",
+      "github-actions",
     ],
   },
   {
-    date: "Febrero 2021 - Julio 2022",
-    title: "Desarollador Backend",
-    company: "Falabella - BC Tecnologia",
-    description:
-      "A cargo del mantenimiento y desarrollo de nuevas funcionalidades para servicios de precios, disponibilidad y productos, con un enfoque en el sector retail a nivel latinoamericano. Estas aplicaciones están basadas en microservicios diseñados específicamente para plataformas de Google Cloud, garantizando soluciones escalables y de alto rendimiento. Mi labor se centra en la implementación de estrategias que optimicen la eficiencia operativa y mejoren la adaptabilidad de los servicios en entornos dinámicos y cambiantes.",
+    date: "Julio 2023 - Abril 2024",
+    title: "Testing y Control de Calidad",
+    company: "Clearminds Consultores Cía. Ltda.",
+    description: `
+      <p>Encargado de realizar pruebas de calidad para core bancario con clientes (Banco Banistmo en Panamá).</p>
+      <p>Atención y control de calidad en el área de pagos a mismos bancos mediante ACH, así como control de la transaccionalidad de pagos a otros bancos mediante ACH.</p>
+      <p>Certificación de la calidad del producto desde que sale de una cuenta bancaria hasta que se efectiviza la transacción monetaria, ya sea créditos o débitos a cuentas (Nequi, Cuentas de ahorros, cuentas corrientes, operaciones con cartera).</p>
+    `,
+    technologies: [],
+  },
+  {
+    date: "Noviembre 2022 - Julio 2023",
+    title: "Desarrollo de producto financiero",
+    company: "Clearminds Consultores Cía. Ltda.",
+    description: `
+      <p>Desarrollo de software enfocado en producto bancario para COBIS TOPAZ.</p>
+      <p>Levantamiento de requerimientos y flujos transaccionales para clientes bancarios (FIE, FINCA, BANISTMO).</p>
+      <p>Pruebas unitarias aplicadas a módulos con Gherkin. Manejo de Amazon Web Services incluyendo funciones Lambda, GraphQL, CloudWatch, ECS y EC2.</p>
+    `,
     technologies: [
-      "golang",
-      "postgresql",
       "javascript",
-      "docker",
-      "kubernetes",
-      "google",
-      "firebase",
-      "gitlab",
+      "nodejs",
+      "graphql",
     ],
   },
   {
-    date: "Julio 2018 - Septiembre 2018",
-    title: "Practica Laboral II",
-    company: "Impla LTDA",
-    description:
-      "Desarrollo de sitios web en Joomla y creación de material publicitario digital para potencia la visibilidad en línea de los clientes",
-    technologies: ["joomla", "php", "css", "html"],
+    date: "Mayo 2022 - Noviembre 2022",
+    title: "Desarrollo de aplicaciones móviles",
+    company: "Clear Minds Consultores Cia. Ltda",
+    description: `
+      <p>Consumo de servicios de COBISCORP y levantamiento de requerimientos con cliente COBIS TOPAZ.</p>
+      <p>Desarrollo de aplicación móvil para Banco Santander utilizando servicios de COBIS TOPAZ.</p>
+      <p>Desarrollo de aplicación MoneyBlinks en React Native con TypeScript. Implementación en Amazon Web Services con funciones Lambda y GraphQL.</p>
+      <p>Pruebas unitarias aplicadas a módulos con Jest y JMeter.</p>
+    `,
+    technologies: [
+      "javascript",
+      "typescript",
+      "react",
+      "graphql",
+    ],
   },
   {
-    date: "Enero 2018 - Marzo 2018",
-    title: "Practica Laboral I",
-    company: "INIA Quilamapu",
-    description:
-      "Soporte técnico y atención en Help Desk, Solucionando problemas de hardware y software y brindando soporte general a usuarios.",
+    date: "Diciembre 2021 - Abril 2022",
+    title: "Pasantías - Desarrollo de aplicaciones móviles",
+    company: "Clear Minds Consultores Cia. Ltda",
+    description: `
+      <p>Desarrollo de aplicaciones móviles con React Native.</p>
+      <p>Desarrollo de aplicación móvil para Banco Santander utilizando servicios de COBIS TOPAZ.</p>
+      <p>Manejo de Git y GitHub, bases de datos relacionales y no relacionales. Diseño de prototipos con Figma.</p>
+    `,
+    technologies: [
+      "javascript",
+      "react",
+      "figma",
+    ],
   },
 ];
 ---

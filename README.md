@@ -21,7 +21,6 @@ Actualmente trabajo como **FullStack Developer** en **IXComercio**, donde desarr
 - **Apps Privadas para Shopify** - Desarrollo de aplicaciones personalizadas con Remix, Node.js y GraphQL
 - **Aplicación Móvil Banco Santander** - App bancaria desarrollada con React Native y TypeScript
 - **MoneyBlinks** - Aplicación financiera móvil con integración COBIS TOPAZ
-- **Kenneth Cole Perú** - Implementación y modificación de tienda online con sistemas de management logístico
 - **Sistema Bancario COBIS TOPAZ** - Desarrollo de software bancario con AWS
 
 ## 📧 Contacto
